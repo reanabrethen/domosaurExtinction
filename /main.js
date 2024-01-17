@@ -49,22 +49,17 @@ const featherDino = document.querySelector('#feathers')
 
 const button = document.querySelector('#toggle')
 const rowColor = document.querySelector('#row')
+
 button.addEventListener('click', ()=>{
-    rowColor.style.backgroundColor = 'turquoise'
-    
+    if(rowColor.style.backgroundColor === 'white'){
+        rowColor.style.backgroundColor = 'turquoise'
+    }else{
+        rowColor.style.backgroundColor = 'white'
+    }
 })
+    
 
 
-// // function colorChange(row){
-//     const rowColor = document.querySelector('#row')
-//     const button = button.addEventListener('click', ()=>{
-//     if(rowColor === 'white'){
-//        document.querySelector('#toggle').style.backgroundColor = 'turquoise'
-//        }else{
-//         document.querySelector('#toggle').style.backgroundColor = 'white'
-
-//     } 
-// })
    
 
 // 5. Establish an event listener for the dinosaur with the ID `biggify`, ensuring that when HOVERED, the image expands to a width of 200 pixels. Note that this requires a different event type, so some research may be necessary to determine the correct event.
